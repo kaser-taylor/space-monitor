@@ -30,3 +30,6 @@
 
 # Trade offs
     *TODO
+
+# Required .env variables & placeholders
+    *TODO
