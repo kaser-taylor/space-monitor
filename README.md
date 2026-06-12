@@ -11,12 +11,16 @@
 
 # Architecture
     *ONGOING
-    Technologies:
+    Base Technologies:
         - java
         - Springboot
         - AWS ec2
         - Claude - chat interface
         - Claude design
 
+    Security:
+        - pre-commit
+        -detect-secrets
+        
 # Trade offs
     *TODO
