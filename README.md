@@ -6,8 +6,10 @@
 
     The goal of this project is to learn solid backend fundamentals with minimal AI assistance. I am passionate about technology and science, this project is meant to be an engaging way to learn, showcase my development skills, and learn a little about space along the way
 
-# Run Instructions
-    *TODO
+# Run Instructions - dev
+    1. python3 -m venv .venv
+    2. source .venv/bin/activate
+    3. pip install pre-commit
 
 # Architecture
     *ONGOING
@@ -21,6 +23,6 @@
     Security:
         - pre-commit
         -detect-secrets
-        
+
 # Trade offs
     *TODO

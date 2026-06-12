@@ -1,10 +1,10 @@
-Title: 
+Title:
 
     ADR 1 Springboot backend.
 
-Context: 
+Context:
 
-    The point of this project is to develop java backend skills and aws infrastructure skills with minimal AI coding tools. AI was used for project planning, quick questions, and review. Java and Springboot are commonly used in enterprise software and I would like to strengthen these skills. 
+    The point of this project is to develop java backend skills and aws infrastructure skills with minimal AI coding tools. AI was used for project planning, quick questions, and review. Java and Springboot are commonly used in enterprise software and I would like to strengthen these skills.
 
 Decision:
 
@@ -15,5 +15,3 @@ Status:
     Accepted
 
 Consequences:
-
-    
