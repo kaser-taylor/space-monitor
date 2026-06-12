@@ -10,6 +10,10 @@
     1. python3 -m venv .venv
     2. source .venv/bin/activate
     3. pip install pre-commit
+    4. pip install detect-secrets
+    5. detect-secrets scan > .secrets.baseline
+        - ensure results is empty
+
 
 # Architecture
     *ONGOING
