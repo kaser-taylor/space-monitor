@@ -1,4 +1,138 @@
+# =============================================================================
+# SECRETS & ENVIRONMENT
+# =============================================================================
 .env
 .env.*
 !.env.example
-!.env.template
+*.key
+*.pem
+*.p12
+*.jks
+.secrets.baseline
+
+# =============================================================================
+# SPRING BOOT / JAVA (backend/)
+# =============================================================================
+
+# Build output
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Do NOT ignore mvnw or .mvn/ — the wrapper needs to be committed
+# !backend/mvnw
+# !backend/.mvn/
+
+# IDE & editor
+backend/.idea/
+backend/*.iml
+backend/*.ipr
+backend/*.iws
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.factorypath
+
+# Spring Boot dev tools restart file
+backend/.reloadtrigger
+
+# Compiled classes (shouldn't be in src, but just in case)
+backend/**/*.class
+
+# Logs
+backend/logs/
+backend/*.log
+backend/*.log.*
+
+# OS artifacts
+backend/.DS_Store
+backend/Thumbs.db
+
+# =============================================================================
+# REACT + TYPESCRIPT / NODE (frontend/)
+# =============================================================================
+
+# Dependencies — never commit these
+frontend/node_modules/
+
+# Build output
+frontend/dist/
+frontend/build/
+
+# DO commit the lockfile (package-lock.json or yarn.lock)
+# !frontend/package-lock.json
+# !frontend/yarn.lock
+
+# Vite cache
+frontend/.vite/
+
+# TypeScript build info
+frontend/*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+
+# Test coverage
+frontend/coverage/
+
+# Editor / IDE
+frontend/.idea/
+frontend/.vscode/
+frontend/*.iml
+
+# =============================================================================
+# DOCKER
+# =============================================================================
+
+# Never store secrets in compose overrides
+docker-compose.override.yml
+
+# =============================================================================
+# CI / GITHUB ACTIONS
+# =============================================================================
+
+# Don't ignore .github/ — workflows should be committed
+# Ignore any local act runner artifacts if you use act locally
+.act/
+
+# =============================================================================
+# GENERAL / OS
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Editor swap / backup files
+*.swp
+*.swo
+*.orig
+*.bak
+*.tmp
+
+# IntelliJ IDEA (root level, if you open the monorepo as one project)
+.idea/
+*.iml
+
+# VS Code (root level)
+.vscode/
+
+# =============================================================================
+# MISC PROJECT FILES
+# =============================================================================
+
+# Crash/heap dumps
+hs_err_pid*
+replay_pid*
+
+# Local notes you don't want to publish
+NOTES.md
+TODO.local.md
+scratch/
