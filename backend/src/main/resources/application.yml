@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: backend
+
+nasa:
+    api-key: ${NASA_API_KEY}
+
+---
+spring:
+    config:
+        activate:
+            on-profile: dev
+
+
+
+---
+spring:
+    config:
+        activate:
+            on-profile: prod
