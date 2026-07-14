@@ -6,12 +6,14 @@ import java.util.List;
 import org.springframework.boot.micrometer.observation.autoconfigure.ObservationProperties.Http;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpStatusCode;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 
 import com.spacemonitor.backend.config.NasaProperties;
 import com.spacemonitor.backend.dto.TestResponseDto;
 import com.spacemonitor.exceptions.DonkiClientException;
 
+@Component
 public class NasaApiTest {
 
     private final NasaProperties nasaProperties;
@@ -33,7 +35,7 @@ public class NasaApiTest {
     public List<TestResponseDto> recentEvent() {
         return restClient.get()
             .uri(uriBuilder -> uriBuilder
-                .path("/DONKI/CME?")
+                .path("/DONKI/CME")
                 .queryParam("startDate", startdate)
                 .queryParam("endDate", enddate)
                 .queryParam("api_key", nasaProperties.apiKey())

@@ -6,5 +6,5 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public record TestResponseDto(
     @JsonProperty("activityID") String activityId,
-    @JsonProperty("startTime") Instant startTime,
+    @JsonProperty("startTime") String startTime,
     String note) {}

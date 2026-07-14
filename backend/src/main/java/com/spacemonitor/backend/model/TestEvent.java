@@ -22,7 +22,7 @@ public class TestEvent {
     private String activityId;
 
     @Column(nullable = false)
-    private Instant startTime;
+    private String startTime;
 
     @Column(nullable = true)
     private String note;
@@ -43,11 +43,11 @@ public class TestEvent {
         this.activityId = activityId;
     }
 
-    public Instant getStartTime() {
+    public String getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(Instant startTime) {
+    public void setStartTime(String startTime) {
         this.startTime = startTime;
     }
 
