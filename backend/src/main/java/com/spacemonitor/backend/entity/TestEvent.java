@@ -1,4 +1,4 @@
-package com.spacemonitor.backend.model;
+package com.spacemonitor.backend.entity;
 
 import java.time.Instant;
 
