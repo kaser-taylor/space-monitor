@@ -22,20 +22,20 @@ public class CME {
     @Column()
     private String catalog;
 
-    @Column()
+    @Column(nullable = false)
     private Instant startTime;
 
     @Column()
     private String note;
 
-    @Column()
+    @Column(nullable = false)
     private String submissionTime;
 
     @Column()
     private String link;
 
     @Column()
-    private String isMostAccurate;
+    private Boolean isMostAccurate;
 
     @Column()
     private Integer latitude;

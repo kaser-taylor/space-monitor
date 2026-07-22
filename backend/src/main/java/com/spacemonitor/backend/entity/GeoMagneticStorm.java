@@ -21,10 +21,10 @@ public class GeoMagneticStorm {
     @Column(nullable = false)
     private String gstId;
 
-    @Column()
+    @Column(nullable = false)
     private Instant startTime;
 
-    @Column()
+    @Column(nullable = false)
     private Instant observedTime;
 
     @Column()
