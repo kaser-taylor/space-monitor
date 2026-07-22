@@ -1,4 +1,4 @@
-package com.spacemonitor.backend.dto;
+package com.spacemonitor.backend.externaldto;
 
 import java.time.Instant;
 

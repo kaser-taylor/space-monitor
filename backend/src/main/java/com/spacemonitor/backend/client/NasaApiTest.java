@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 
 import com.spacemonitor.backend.config.NasaProperties;
-import com.spacemonitor.backend.dto.TestResponseDto;
+import com.spacemonitor.backend.externaldto.TestResponseDto;
 import com.spacemonitor.exceptions.DonkiClientException;
 
 @Component

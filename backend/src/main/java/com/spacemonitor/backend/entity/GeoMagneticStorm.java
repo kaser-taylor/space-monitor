@@ -19,12 +19,12 @@ public class GeoMagneticStorm {
     private Long id;
 
     @Column(nullable = false)
-    private String gstID;
+    private String gstId;
 
-    @Column()
+    @Column(nullable = false)
     private Instant startTime;
 
-    @Column()
+    @Column(nullable = false)
     private Instant observedTime;
 
     @Column()
@@ -36,6 +36,11 @@ public class GeoMagneticStorm {
     @Column()
     private Instant submissionTime;
 
+    @Column()
+    private Integer kpIndex;
+
+    @Column()
+    private String source;
 
 
 
