@@ -1,0 +1,40 @@
+# Version control
+.git
+.gitignore
+
+# Maven build artifacts (recompiled inside the image anyway)
+target/
+backend/target/
+
+# Node / frontend (if/when you add frontend/)
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# IDE / editor
+.vscode/
+.idea/
+*.iml
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Env files and secrets — never bake these into an image
+.env
+.env.*
+*.pem
+*.key
+
+# Logs
+*.log
+
+# Docker itself
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Docs (not needed at runtime)
+README.md
+docs/
