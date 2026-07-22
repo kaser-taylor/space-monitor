@@ -2,8 +2,8 @@ package com.spacemonitor.backend.mapper;
 
 import org.springframework.stereotype.Component;
 
-import com.spacemonitor.backend.dto.TestResponseDto;
 import com.spacemonitor.backend.entity.TestEvent;
+import com.spacemonitor.backend.externaldto.TestResponseDto;
 
 @Component
 public class TestResponseMapper {

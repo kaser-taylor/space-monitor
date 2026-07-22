@@ -38,27 +38,27 @@ public class CME {
     private String isMostAccurate;
 
     @Column()
-    private int latitude;
+    private Integer latitude;
 
     @Column()
-    private int longitude;
+    private Integer longitude;
 
     @Column()
-    private int halfAngle;
+    private Integer halfAngle;
 
     @Column()
-    private int speed;
+    private Integer speed;
 
     @Column()
-    private int type;
+    private String type;
 
     @Column()
-    private float tilt;
+    private Float tilt;
 
     @Column()
-    private float minorHalfWidth;
+    private Float minorHalfWidth;
 
     @Column()
-    private float speedAtHeight;
+    private Float speedAtHeight;
 
 }
