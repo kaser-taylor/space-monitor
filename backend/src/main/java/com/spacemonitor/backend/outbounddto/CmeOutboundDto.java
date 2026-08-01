@@ -8,7 +8,7 @@ public record CmeOutboundDto(
     String catalog,
     Instant startTime,
     String note,
-    String submissionTime,
+    Instant submissionTime,
     String link,
     Boolean isMostAccurate,
     Integer latitude,
