@@ -29,7 +29,7 @@ public class CME {
     private String note;
 
     @Column(nullable = false)
-    private String submissionTime;
+    private Instant submissionTime;
 
     @Column()
     private String link;
