@@ -20,7 +20,7 @@ public class CME {
     private String activityId;
 
     @Column()
-    private String catalog;
+    private String catalogs;
 
     @Column(nullable = false)
     private Instant startTime;
@@ -50,7 +50,7 @@ public class CME {
     private Integer speed;
 
     @Column()
-    private String type;
+    private String types;
 
     @Column()
     private Float tilt;
